@@ -1,0 +1,170 @@
+/* ✅ Layout */
+.profile-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f6f8fa;
+}
+
+/* 🧭 Sidebar */
+.sidebar {
+  width: 250px;
+  background: linear-gradient(to right, #00544f, #00b786);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 15px;
+  transition: all 0.3s ease;
+}
+
+.sidebar-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid #3b82f6;
+}
+
+.sidebar h3 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.sidebar p {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.nav-btn {
+  background: transparent;
+  border: none;
+  color: #d1d5db;
+  text-align: left;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-btn:hover,
+.nav-btn.active {
+  background: #3b82f6;
+  color: #fff;
+}
+
+.nav-btn.logout {
+  color: white;
+  margin-top: auto;
+}
+
+.nav-btn.logout:hover {
+  background: #ef4444;
+}
+
+/* 📄 Main Content */
+.profile-main {
+  flex: 1;
+  padding: 40px;
+}
+
+.profile-card,
+.orders-section {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 8px 0;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.info-value {
+  color: #6b7280;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-table th,
+.orders-table td {
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+  padding: 10px 12px;
+}
+
+.orders-table th {
+  background: #f9fafb;
+  font-weight: 600;
+  color: #374151;
+}
+
+.orders-table tr:hover {
+  background: #f3f4f6;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .profile-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .sidebar-header {
+    display: none;
+  }
+
+  .sidebar-nav {
+    flex-direction: row;
+    gap: 5px;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .nav-btn {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .profile-main {
+    padding: 20px;
+  }
+}
