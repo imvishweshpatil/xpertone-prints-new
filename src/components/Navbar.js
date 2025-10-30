@@ -36,7 +36,7 @@ const handleLogout = () => {
 </li>
 <li className="list-inline-item">
   <a href="https://wa.me/971545832318" target="_blank" rel="noopener noreferrer">
-    <i className="msicon msi-whatsapp"></i> +971 54 583 2318
+    <i className="msicon msi-whatsapp"></i> +971 54 583 2311
   </a>
 </li> 
                                 </div>
